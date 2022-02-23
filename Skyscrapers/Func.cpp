@@ -1,8 +1,8 @@
 #include "Func.h"
 
 int N;
-char filenameRecords[] = "C:\\Users\\yanka\\OneDrive\\stuff\\Skyscrapers\\records_table.txt";
-char filenameRecordsEncoded[] = "C:\\Users\\yanka\\OneDrive\\stuff\\Skyscrapers\\records_table_encoded.txt";
+char filenameRecords[] = "..\\records_table.txt";
+char filenameRecordsEncoded[] = "..\\records_table_encoded.txt";
 int levelname;
 int mas[99][99];
 
@@ -15,10 +15,10 @@ char* filename_search(HWND hListBox, HWND hWnd) {
     for (int i = 0; i < 30; i++) {
 
         if (debug) {
-            sprintf_s(name, "C:\\Users\\yanka\\OneDrive\\stuff\\Skyscrapers\\game%dsolve.txt", i);
+            sprintf_s(name, "..\\game%dsolve.txt", i);
         }
         else {
-            sprintf_s(name, "C:\\Users\\yanka\\OneDrive\\stuff\\Skyscrapers\\game%d.txt", i);
+            sprintf_s(name, "..\\game%d.txt", i);
         }
         
 

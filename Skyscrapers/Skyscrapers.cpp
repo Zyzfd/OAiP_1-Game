@@ -176,10 +176,10 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
             char name[60] = "";
             char tru[3] = "";
             if (debug) {
-                sprintf_s(name, "C:\\Users\\yanka\\OneDrive\\stuff\\Skyscrapers\\game%dsolve.txt", i);
+                sprintf_s(name, "..\\game%dsolve.txt", i);
             }
             else {
-                sprintf_s(name, "C:\\Users\\yanka\\OneDrive\\stuff\\Skyscrapers\\game%d.txt", i);
+                sprintf_s(name, "..\\game%d.txt", i);
             }
 
             FILE* fin = fopen(name, "rt");
